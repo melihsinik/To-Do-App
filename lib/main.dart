@@ -5,12 +5,12 @@ import 'package:to_do_app/task_details.dart';
 import 'model.dart';
 
 void main()async{
-  DatabaseHelper _db=DatabaseHelper();
+  //DatabaseHelper _db=DatabaseHelper();
   //int eklemeIslemi= await _db.saveTask(Task("shop","Go shopping ","Do this day todo app","2019-0-12-13-30",1));
-  List task= await _db.getAllTask();
+  /*List task= await _db.getAllTask();
   for(int i=0;i<task.length;i++){
     _db.deleteTask(task[i]["id"]);
-  }
+  }*/
 
   runApp(MaterialApp(home: ToDo(),));
 }
